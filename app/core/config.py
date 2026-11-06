@@ -9,6 +9,11 @@ class Settings(BaseSettings):
     # PostgreSQL async connection URL
     DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/fast_api_auth"
 
+    # JWT Authentication
+    SECRET_KEY: str = "supersecretjwtkeyforlocaldevelopmentchangeinproduction"
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
