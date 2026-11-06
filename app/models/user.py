@@ -33,6 +33,12 @@ class UserCreate(UserBase):
     password: str = Field(min_length=8, max_length=128)
 
 
+class UserLogin(SQLModel):
+    """Payload for JSON user login."""
+    email: str
+    password: str
+
+
 class UserRead(UserBase):
     """Payload returned in responses (excludes hashed_password)."""
     id: uuid.UUID
