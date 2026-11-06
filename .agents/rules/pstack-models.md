@@ -4,20 +4,20 @@ trigger: always_on
 ---
 # pstack model configuration. One line per role. Delete a line to fall back to the skill default.
 # `inherit` as a value: the role runs on the parent chat model.
-feature, refactoring: flash
-bug-fix: flash
-perf-issue: flash
-hillclimb: flash
-judgment and prose: pro
-hardest tasks: pro
-how explorer: flash
-how explainer: pro
-why investigators: flash
-why synthesizer: pro
-reflect tooling: flash
-reflect judgment, divergent, synthesizer: pro
-arena runners: pro, flash
-arena cross-judge pool: pro, flash
-swarm workers: flash
-architect runners: pro, flash
-interrogate reviewers: pro, flash
+feature, refactoring: inherit
+bug-fix: inherit
+perf-issue: inherit
+hillclimb: inherit
+judgment and prose: inherit
+hardest tasks: inherit
+how explorer: inherit
+how explainer: inherit
+why investigators: inherit
+why synthesizer: inherit
+reflect tooling: inherit
+reflect judgment, divergent, synthesizer: inherit
+arena runners: inherit
+arena cross-judge pool: inherit
+swarm workers: inherit
+architect runners: inherit
+interrogate reviewers: inherit
